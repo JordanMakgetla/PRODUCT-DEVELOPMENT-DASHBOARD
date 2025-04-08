@@ -1,0 +1,1001 @@
+Date,ProductType,MarketingStrategy,InteractionType,Converted,QuantitySold,Anomaly
+2025-03-25,Clothing,Influencer,View,0,0,0
+2025-02-16,Toys,Influencer,Purchase,1,5,0
+2025-03-13,Toys,Influencer,View,0,0,0
+2024-12-12,Home Appliances,Referral,Click,0,0,0
+2025-02-27,Clothing,Referral,View,0,0,0
+2025-03-24,Toys,Social Media,Purchase,1,5,0
+2025-01-18,Toys,Search Engine,View,0,0,0
+2024-10-25,Home Appliances,Social Media,Click,0,0,0
+2024-12-31,Home Appliances,Influencer,Add to Cart,0,0,0
+2024-10-15,Home Appliances,Social Media,Purchase,1,5,0
+2025-02-08,Electronics,Email,Add to Cart,0,0,0
+2024-10-26,Books,Social Media,Click,0,0,0
+2025-03-23,Electronics,Influencer,Purchase,1,1,0
+2024-11-15,Books,Influencer,Add to Cart,0,0,0
+2024-11-24,Electronics,Referral,Add to Cart,0,0,0
+2025-01-10,Toys,Referral,Purchase,1,4,0
+2024-11-29,Electronics,Influencer,Click,0,0,0
+2025-01-23,Home Appliances,Referral,View,0,0,0
+2025-01-14,Electronics,Social Media,View,0,0,0
+2024-11-26,Electronics,Social Media,Click,0,0,0
+2025-01-19,Books,Email,Click,0,0,0
+2025-03-29,Toys,Search Engine,View,0,0,0
+2025-01-02,Clothing,Email,Purchase,1,3,0
+2025-01-27,Electronics,Email,View,0,0,0
+2025-01-19,Electronics,Social Media,Add to Cart,0,0,0
+2024-12-04,Toys,Email,Click,0,0,0
+2024-10-10,Home Appliances,Search Engine,Purchase,1,4,0
+2024-12-27,Books,Search Engine,Add to Cart,0,0,0
+2025-02-02,Electronics,Search Engine,View,0,0,0
+2025-03-06,Toys,Email,View,0,0,0
+2024-12-09,Toys,Email,View,0,0,0
+2024-10-21,Home Appliances,Referral,View,0,0,0
+2025-01-23,Home Appliances,Influencer,View,0,0,0
+2024-10-18,Home Appliances,Search Engine,Purchase,1,4,0
+2024-11-02,Electronics,Search Engine,Click,0,0,0
+2024-11-17,Toys,Social Media,Click,0,0,0
+2025-01-29,Books,Referral,Add to Cart,0,0,0
+2024-11-04,Clothing,Influencer,Add to Cart,0,0,0
+2024-12-27,Electronics,Referral,Click,0,0,0
+2025-01-19,Electronics,Email,View,0,0,0
+2025-02-28,Toys,Referral,Purchase,1,5,0
+2025-03-13,Toys,Email,Add to Cart,0,0,0
+2025-02-19,Clothing,Influencer,Click,0,0,0
+2024-11-15,Books,Referral,Click,0,0,0
+2025-03-13,Clothing,Social Media,Click,0,0,0
+2025-03-15,Toys,Influencer,Click,0,0,0
+2024-10-19,Electronics,Social Media,View,0,0,0
+2024-12-17,Toys,Search Engine,View,0,0,0
+2025-01-12,Home Appliances,Email,Add to Cart,0,0,0
+2025-02-01,Electronics,Social Media,Purchase,1,3,0
+2025-04-01,Home Appliances,Social Media,Click,0,0,0
+2025-01-10,Electronics,Influencer,View,0,0,0
+2025-04-01,Clothing,Influencer,Purchase,1,4,0
+2025-01-20,Home Appliances,Referral,Add to Cart,0,0,0
+2025-03-29,Toys,Social Media,Add to Cart,0,0,0
+2025-03-18,Home Appliances,Search Engine,Click,0,0,0
+2024-11-15,Electronics,Influencer,Click,0,0,0
+2025-02-24,Clothing,Search Engine,Add to Cart,0,0,0
+2024-11-29,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-10-24,Books,Search Engine,Purchase,1,3,0
+2025-02-05,Home Appliances,Search Engine,View,0,0,0
+2025-03-27,Clothing,Referral,View,0,0,0
+2025-01-02,Home Appliances,Social Media,Click,0,0,0
+2025-02-08,Home Appliances,Email,View,0,0,0
+2024-11-30,Electronics,Referral,View,0,0,0
+2025-03-31,Toys,Referral,Purchase,1,5,0
+2025-01-08,Clothing,Email,Add to Cart,0,0,0
+2025-03-24,Toys,Referral,Purchase,1,2,0
+2025-01-17,Home Appliances,Search Engine,Click,0,0,0
+2025-02-26,Toys,Influencer,Click,0,0,0
+2024-12-18,Books,Referral,View,0,0,0
+2025-02-15,Books,Influencer,View,0,0,0
+2025-01-07,Clothing,Referral,Click,0,0,0
+2025-02-15,Toys,Social Media,Purchase,1,2,0
+2024-12-14,Clothing,Referral,Click,0,0,0
+2024-12-11,Books,Influencer,View,0,0,0
+2025-01-23,Clothing,Search Engine,Click,0,0,0
+2025-03-02,Electronics,Influencer,Add to Cart,0,0,0
+2024-12-31,Clothing,Email,Click,0,0,0
+2024-10-16,Toys,Influencer,Purchase,1,4,0
+2025-03-07,Books,Email,View,0,0,0
+2024-10-26,Home Appliances,Email,Add to Cart,0,0,0
+2025-03-18,Home Appliances,Referral,Click,0,0,0
+2025-02-01,Books,Search Engine,Add to Cart,0,0,0
+2024-11-29,Toys,Email,Add to Cart,0,0,0
+2024-10-27,Books,Social Media,Purchase,1,3,0
+2024-10-19,Home Appliances,Search Engine,Purchase,1,5,0
+2025-02-01,Electronics,Referral,Click,0,0,0
+2025-04-01,Books,Social Media,Click,0,0,0
+2024-11-13,Electronics,Referral,Add to Cart,0,0,0
+2025-03-06,Clothing,Social Media,Click,0,0,0
+2024-10-12,Clothing,Influencer,View,0,0,0
+2025-01-17,Clothing,Search Engine,Add to Cart,0,0,0
+2024-11-08,Electronics,Search Engine,Purchase,1,4,0
+2025-01-09,Clothing,Referral,Click,0,0,0
+2024-10-31,Books,Email,Click,0,0,0
+2024-11-29,Electronics,Social Media,Click,0,0,0
+2024-12-14,Clothing,Referral,View,0,0,0
+2025-03-21,Toys,Social Media,View,0,0,0
+2025-02-18,Clothing,Influencer,Click,0,0,0
+2024-10-30,Toys,Search Engine,View,0,0,0
+2024-11-02,Home Appliances,Email,Click,0,0,0
+2025-02-05,Books,Referral,Purchase,1,4,0
+2024-12-14,Clothing,Social Media,Purchase,1,5,0
+2024-12-31,Clothing,Referral,Click,0,0,0
+2025-03-04,Toys,Referral,Add to Cart,0,0,0
+2024-11-19,Clothing,Influencer,Purchase,1,5,0
+2025-03-29,Toys,Email,Click,0,0,0
+2025-03-13,Books,Search Engine,Click,0,0,0
+2025-02-21,Electronics,Email,Click,0,0,0
+2024-10-07,Toys,Referral,Purchase,1,2,0
+2025-01-01,Toys,Email,Click,0,0,0
+2025-02-03,Books,Referral,View,0,0,0
+2025-03-11,Toys,Referral,View,0,0,0
+2025-02-13,Electronics,Search Engine,Click,0,0,0
+2025-03-14,Toys,Referral,View,0,0,0
+2024-12-22,Books,Referral,Purchase,1,3,0
+2025-02-26,Electronics,Referral,Purchase,1,2,0
+2025-03-23,Books,Search Engine,Add to Cart,0,0,0
+2025-03-06,Toys,Referral,View,0,0,0
+2025-03-19,Books,Social Media,Add to Cart,0,0,0
+2025-02-04,Books,Social Media,View,0,0,0
+2024-11-19,Home Appliances,Referral,Purchase,1,3,0
+2024-12-28,Clothing,Email,View,0,0,0
+2025-02-28,Toys,Referral,View,0,0,0
+2025-03-26,Toys,Email,Purchase,1,2,0
+2025-01-16,Home Appliances,Search Engine,Add to Cart,0,0,0
+2024-12-27,Electronics,Social Media,Purchase,1,5,0
+2025-01-10,Home Appliances,Influencer,Purchase,1,5,0
+2025-01-16,Home Appliances,Referral,Add to Cart,0,0,0
+2024-10-15,Books,Social Media,Purchase,1,5,0
+2025-01-18,Toys,Search Engine,Click,0,0,0
+2025-01-20,Home Appliances,Referral,Purchase,1,3,0
+2025-01-08,Home Appliances,Referral,Add to Cart,0,0,0
+2024-11-04,Books,Social Media,View,0,0,0
+2024-10-28,Clothing,Search Engine,Click,0,0,0
+2025-02-07,Electronics,Social Media,Purchase,1,3,0
+2025-03-20,Toys,Referral,View,0,0,0
+2025-01-08,Clothing,Search Engine,View,0,0,0
+2024-11-14,Electronics,Social Media,Purchase,1,5,0
+2025-02-21,Books,Email,View,0,0,0
+2025-03-25,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-12-03,Electronics,Referral,View,0,0,0
+2024-11-13,Books,Search Engine,Add to Cart,0,0,0
+2025-01-06,Toys,Email,Click,0,0,0
+2024-12-25,Books,Search Engine,View,0,0,0
+2024-10-09,Clothing,Referral,Add to Cart,0,0,0
+2025-01-05,Clothing,Email,Click,0,0,0
+2025-02-06,Toys,Social Media,View,0,0,0
+2024-10-24,Home Appliances,Social Media,View,0,0,0
+2024-12-23,Clothing,Email,Add to Cart,0,0,0
+2025-01-07,Books,Influencer,Purchase,1,4,0
+2024-12-10,Toys,Social Media,View,0,0,0
+2024-12-08,Electronics,Email,Add to Cart,0,0,0
+2024-11-15,Toys,Referral,Add to Cart,0,0,0
+2024-12-09,Home Appliances,Influencer,Click,0,0,0
+2024-12-09,Toys,Social Media,Purchase,1,4,0
+2024-10-15,Toys,Email,Add to Cart,0,0,0
+2024-11-11,Clothing,Search Engine,View,0,0,0
+2025-02-20,Toys,Email,Add to Cart,0,0,0
+2024-10-29,Home Appliances,Email,Add to Cart,0,0,0
+2024-12-05,Toys,Referral,Add to Cart,0,0,0
+2025-02-21,Books,Search Engine,Purchase,1,2,0
+2025-02-09,Home Appliances,Search Engine,Purchase,1,5,0
+2025-03-01,Electronics,Search Engine,View,0,0,0
+2024-11-22,Home Appliances,Email,Purchase,1,2,0
+2025-03-08,Clothing,Influencer,Purchase,1,3,0
+2024-12-22,Toys,Referral,View,0,0,0
+2024-10-23,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-03-09,Electronics,Search Engine,Add to Cart,0,0,0
+2024-12-27,Electronics,Referral,Click,0,0,0
+2024-12-09,Books,Influencer,Add to Cart,0,0,0
+2024-11-08,Clothing,Referral,Add to Cart,0,0,0
+2025-04-06,Clothing,Social Media,Purchase,1,2,0
+2025-03-20,Clothing,Social Media,Add to Cart,0,0,0
+2025-03-14,Clothing,Social Media,Click,0,0,0
+2025-03-03,Clothing,Referral,Add to Cart,0,0,0
+2025-01-23,Clothing,Email,View,0,0,0
+2025-03-12,Electronics,Search Engine,View,0,0,0
+2024-10-08,Toys,Email,Purchase,1,3,0
+2024-10-11,Toys,Influencer,Purchase,1,5,0
+2024-11-25,Home Appliances,Search Engine,Click,0,0,0
+2025-02-11,Toys,Influencer,Purchase,1,2,0
+2024-12-15,Toys,Social Media,View,0,0,0
+2025-02-03,Toys,Search Engine,Purchase,1,5,0
+2025-01-16,Electronics,Referral,Add to Cart,0,0,0
+2025-02-11,Books,Social Media,Purchase,1,1,0
+2024-12-13,Toys,Search Engine,Add to Cart,0,0,0
+2024-10-09,Electronics,Email,Click,0,0,0
+2025-01-19,Books,Referral,View,0,0,0
+2024-11-02,Home Appliances,Influencer,Add to Cart,0,0,0
+2024-12-22,Clothing,Referral,Add to Cart,0,0,0
+2025-01-28,Clothing,Influencer,Purchase,1,5,0
+2024-12-09,Home Appliances,Influencer,Click,0,0,0
+2025-03-20,Books,Search Engine,Click,0,0,0
+2024-12-17,Books,Influencer,Add to Cart,0,0,0
+2025-02-16,Books,Influencer,Purchase,1,2,0
+2024-12-10,Toys,Social Media,Click,0,0,0
+2024-12-06,Electronics,Influencer,Click,0,0,0
+2024-12-03,Toys,Search Engine,Purchase,1,2,0
+2025-03-09,Clothing,Social Media,Purchase,1,1,0
+2024-10-06,Clothing,Search Engine,Purchase,1,2,0
+2024-11-29,Toys,Referral,Add to Cart,0,0,0
+2025-02-01,Books,Influencer,Add to Cart,0,0,0
+2025-03-17,Toys,Referral,View,0,0,0
+2024-12-19,Books,Email,Click,0,0,0
+2025-03-31,Electronics,Social Media,Add to Cart,0,0,0
+2025-01-28,Books,Email,Purchase,1,3,0
+2024-11-14,Home Appliances,Influencer,Add to Cart,0,0,0
+2025-03-02,Toys,Referral,Add to Cart,0,0,0
+2024-11-19,Home Appliances,Email,Purchase,1,1,0
+2025-02-26,Home Appliances,Referral,Click,0,0,0
+2025-04-06,Toys,Referral,Click,0,0,0
+2024-10-08,Home Appliances,Influencer,Add to Cart,0,0,0
+2024-12-24,Toys,Search Engine,Purchase,1,1,0
+2025-01-07,Books,Referral,Add to Cart,0,0,0
+2025-02-14,Books,Social Media,Click,0,0,0
+2024-11-26,Home Appliances,Search Engine,Purchase,1,1,0
+2024-12-09,Electronics,Social Media,Add to Cart,0,0,0
+2025-01-26,Clothing,Influencer,Add to Cart,0,0,0
+2024-10-16,Home Appliances,Influencer,Purchase,1,3,0
+2024-10-22,Books,Influencer,Purchase,1,4,0
+2025-03-15,Clothing,Social Media,View,0,0,0
+2025-03-26,Clothing,Social Media,Add to Cart,0,0,0
+2025-03-10,Electronics,Social Media,Click,0,0,0
+2025-03-27,Books,Email,View,0,0,0
+2025-03-07,Electronics,Search Engine,View,0,0,0
+2024-12-25,Electronics,Search Engine,View,0,0,0
+2024-11-30,Electronics,Influencer,Click,0,0,0
+2025-03-22,Electronics,Search Engine,Add to Cart,0,0,0
+2024-10-16,Clothing,Social Media,Add to Cart,0,0,0
+2024-12-08,Books,Social Media,Click,0,0,0
+2025-01-13,Toys,Social Media,View,0,0,0
+2025-03-18,Electronics,Influencer,Add to Cart,0,0,0
+2024-12-31,Books,Search Engine,Add to Cart,0,0,0
+2025-03-18,Toys,Search Engine,Click,0,0,0
+2024-12-02,Toys,Social Media,Purchase,1,5,0
+2025-01-13,Books,Referral,Add to Cart,0,0,0
+2025-01-22,Home Appliances,Search Engine,Click,0,0,0
+2024-10-15,Electronics,Search Engine,Add to Cart,0,0,0
+2025-04-06,Home Appliances,Search Engine,Add to Cart,0,0,0
+2024-10-19,Clothing,Influencer,View,0,0,0
+2025-01-05,Electronics,Referral,Click,0,0,0
+2025-01-21,Home Appliances,Influencer,Purchase,1,5,0
+2024-10-10,Electronics,Search Engine,Purchase,1,3,0
+2025-02-05,Electronics,Search Engine,Add to Cart,0,0,0
+2025-01-05,Toys,Social Media,View,0,0,0
+2025-01-10,Toys,Influencer,Click,0,0,0
+2024-11-21,Books,Referral,Purchase,1,4,0
+2025-02-21,Clothing,Social Media,Purchase,1,4,0
+2024-12-10,Clothing,Influencer,View,0,0,0
+2025-03-20,Books,Social Media,Add to Cart,0,0,0
+2025-02-08,Home Appliances,Referral,Add to Cart,0,0,0
+2024-12-04,Books,Social Media,View,0,0,0
+2024-12-12,Clothing,Social Media,Add to Cart,0,0,0
+2024-10-28,Electronics,Search Engine,Purchase,1,3,0
+2025-01-03,Toys,Search Engine,Click,0,0,0
+2025-01-13,Home Appliances,Email,Click,0,0,0
+2024-10-26,Electronics,Referral,View,0,0,0
+2024-10-24,Clothing,Email,Add to Cart,0,0,0
+2025-03-03,Home Appliances,Social Media,Purchase,1,1,0
+2025-01-16,Clothing,Email,Click,0,0,0
+2024-10-16,Electronics,Search Engine,Click,0,0,0
+2025-03-24,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-02-09,Books,Influencer,Purchase,1,1,0
+2025-02-24,Home Appliances,Email,Click,0,0,0
+2025-03-13,Electronics,Influencer,Purchase,1,1,0
+2024-12-06,Toys,Search Engine,Click,0,0,0
+2025-02-24,Clothing,Influencer,Purchase,1,1,0
+2024-11-07,Electronics,Social Media,Purchase,1,4,0
+2025-02-03,Clothing,Email,Click,0,0,0
+2025-03-29,Books,Email,Click,0,0,0
+2024-10-08,Books,Search Engine,Add to Cart,0,0,0
+2024-10-31,Home Appliances,Social Media,View,0,0,0
+2025-03-07,Toys,Referral,View,0,0,0
+2024-12-31,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-01-12,Clothing,Influencer,View,0,0,0
+2024-11-16,Clothing,Email,Click,0,0,0
+2025-04-02,Books,Influencer,View,0,0,0
+2025-02-18,Clothing,Influencer,View,0,0,0
+2025-02-18,Books,Social Media,View,0,0,0
+2025-02-16,Electronics,Referral,Purchase,1,5,0
+2025-02-23,Clothing,Influencer,View,0,0,0
+2024-11-21,Clothing,Social Media,Purchase,1,1,0
+2025-03-10,Toys,Influencer,View,0,0,0
+2024-10-15,Electronics,Influencer,Click,0,0,0
+2025-01-18,Toys,Email,Click,0,0,0
+2024-11-24,Books,Social Media,Add to Cart,0,0,0
+2025-03-13,Toys,Influencer,Purchase,1,2,0
+2025-03-04,Electronics,Search Engine,Add to Cart,0,0,0
+2024-12-12,Clothing,Influencer,View,0,0,0
+2024-10-06,Books,Search Engine,Add to Cart,0,0,0
+2024-10-31,Toys,Search Engine,Click,0,0,0
+2024-12-18,Toys,Social Media,Add to Cart,0,0,0
+2024-12-20,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-01-23,Toys,Referral,Click,0,0,0
+2024-11-18,Electronics,Referral,Click,0,0,0
+2025-02-28,Books,Influencer,Add to Cart,0,0,0
+2025-02-20,Toys,Influencer,Purchase,1,1,0
+2025-02-27,Toys,Search Engine,Click,0,0,0
+2025-01-08,Electronics,Referral,Add to Cart,0,0,0
+2024-11-14,Toys,Social Media,Add to Cart,0,0,0
+2025-02-12,Electronics,Referral,Purchase,1,2,0
+2024-10-07,Toys,Search Engine,Click,0,0,0
+2025-02-03,Toys,Influencer,Add to Cart,0,0,0
+2025-01-02,Books,Influencer,View,0,0,0
+2025-02-26,Electronics,Referral,View,0,0,0
+2024-10-18,Electronics,Social Media,Click,0,0,0
+2024-11-29,Electronics,Social Media,View,0,0,0
+2024-10-20,Books,Social Media,View,0,0,0
+2025-01-29,Electronics,Referral,Purchase,1,4,0
+2025-01-13,Toys,Referral,Add to Cart,0,0,0
+2024-11-04,Electronics,Influencer,Click,0,0,0
+2024-10-30,Toys,Email,View,0,0,0
+2024-11-03,Clothing,Search Engine,View,0,0,0
+2024-11-19,Books,Email,Add to Cart,0,0,0
+2024-11-02,Toys,Search Engine,Add to Cart,0,0,0
+2025-03-18,Electronics,Referral,Add to Cart,0,0,0
+2024-10-12,Toys,Email,View,0,0,0
+2024-11-20,Home Appliances,Email,Click,0,0,0
+2024-12-23,Toys,Email,View,0,0,0
+2024-10-14,Clothing,Referral,Purchase,1,2,0
+2025-03-01,Clothing,Referral,Click,0,0,0
+2025-03-19,Toys,Social Media,Purchase,1,1,0
+2025-01-17,Toys,Influencer,Purchase,1,4,0
+2024-12-13,Electronics,Social Media,Click,0,0,0
+2025-01-31,Toys,Search Engine,Add to Cart,0,0,0
+2024-12-17,Clothing,Referral,Purchase,1,3,0
+2025-03-18,Home Appliances,Referral,Add to Cart,0,0,0
+2025-02-09,Home Appliances,Search Engine,Purchase,1,3,0
+2025-03-07,Toys,Social Media,Click,0,0,0
+2024-11-01,Books,Referral,Add to Cart,0,0,0
+2025-01-01,Home Appliances,Search Engine,Purchase,1,4,0
+2024-12-17,Electronics,Email,Add to Cart,0,0,0
+2024-10-26,Toys,Email,Click,0,0,0
+2025-01-11,Home Appliances,Email,Add to Cart,0,0,0
+2025-02-07,Clothing,Social Media,Add to Cart,0,0,0
+2025-03-08,Electronics,Influencer,Click,0,0,0
+2024-11-20,Electronics,Email,Purchase,1,3,0
+2024-12-26,Clothing,Social Media,Add to Cart,0,0,0
+2025-01-23,Home Appliances,Referral,Click,0,0,0
+2024-11-01,Clothing,Influencer,Add to Cart,0,0,0
+2025-02-02,Electronics,Referral,Purchase,1,5,0
+2024-12-13,Clothing,Email,Add to Cart,0,0,0
+2025-01-15,Books,Social Media,Purchase,1,5,0
+2024-10-29,Electronics,Referral,Add to Cart,0,0,0
+2025-01-16,Electronics,Referral,Purchase,1,1,0
+2025-02-18,Electronics,Influencer,Add to Cart,0,0,0
+2025-01-21,Books,Search Engine,View,0,0,0
+2024-11-28,Clothing,Referral,View,0,0,0
+2025-01-13,Books,Email,Add to Cart,0,0,0
+2025-01-09,Toys,Email,Add to Cart,0,0,0
+2025-01-28,Toys,Referral,Click,0,0,0
+2024-12-09,Home Appliances,Referral,Click,0,0,0
+2024-10-13,Clothing,Email,Purchase,1,4,0
+2025-01-28,Toys,Referral,View,0,0,0
+2025-01-24,Clothing,Search Engine,Add to Cart,0,0,0
+2025-03-20,Books,Social Media,Click,0,0,0
+2025-02-15,Home Appliances,Email,Purchase,1,5,0
+2024-11-24,Electronics,Referral,Purchase,1,3,0
+2024-11-09,Electronics,Search Engine,Purchase,1,2,0
+2024-10-21,Clothing,Search Engine,Click,0,0,0
+2024-12-20,Books,Search Engine,Click,0,0,0
+2024-12-30,Toys,Referral,Click,0,0,0
+2025-01-05,Clothing,Email,Add to Cart,0,0,0
+2025-03-29,Books,Influencer,View,0,0,0
+2025-03-29,Electronics,Search Engine,Purchase,1,3,0
+2025-01-19,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-10-19,Home Appliances,Referral,View,0,0,0
+2025-01-11,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-01-22,Toys,Search Engine,Click,0,0,0
+2025-01-24,Books,Email,Click,0,0,0
+2025-01-08,Clothing,Influencer,Click,0,0,0
+2024-12-31,Electronics,Email,View,0,0,0
+2025-03-16,Clothing,Referral,Click,0,0,0
+2024-12-08,Home Appliances,Email,Add to Cart,0,0,0
+2024-10-22,Electronics,Influencer,Purchase,1,4,0
+2024-12-21,Electronics,Influencer,Click,0,0,0
+2024-10-17,Toys,Social Media,Click,0,0,0
+2024-10-23,Toys,Referral,Add to Cart,0,0,0
+2025-01-04,Toys,Search Engine,Click,0,0,0
+2024-11-27,Electronics,Search Engine,View,0,0,0
+2025-03-06,Home Appliances,Social Media,View,0,0,0
+2024-10-30,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-12-16,Electronics,Search Engine,View,0,0,0
+2024-12-07,Electronics,Search Engine,Add to Cart,0,0,0
+2024-11-26,Home Appliances,Email,View,0,0,0
+2025-01-11,Home Appliances,Search Engine,Click,0,0,0
+2025-03-17,Books,Referral,View,0,0,0
+2024-10-11,Home Appliances,Search Engine,View,0,0,0
+2024-11-19,Clothing,Social Media,Purchase,1,5,0
+2024-12-22,Electronics,Email,Click,0,0,0
+2025-03-27,Toys,Influencer,Add to Cart,0,0,0
+2025-01-14,Books,Search Engine,Click,0,0,0
+2024-10-23,Electronics,Influencer,Add to Cart,0,0,0
+2024-12-07,Home Appliances,Influencer,Click,0,0,0
+2024-10-18,Toys,Influencer,View,0,0,0
+2025-02-22,Home Appliances,Search Engine,View,0,0,0
+2025-02-19,Toys,Influencer,Click,0,0,0
+2025-02-26,Clothing,Influencer,Purchase,1,2,0
+2024-10-20,Electronics,Search Engine,Click,0,0,0
+2024-11-24,Books,Social Media,Click,0,0,0
+2024-11-28,Books,Influencer,Add to Cart,0,0,0
+2025-02-06,Books,Referral,Click,0,0,0
+2024-10-08,Clothing,Social Media,Click,0,0,0
+2024-11-13,Clothing,Influencer,Click,0,0,0
+2025-02-23,Books,Social Media,Click,0,0,0
+2024-10-28,Home Appliances,Email,View,0,0,0
+2024-10-09,Clothing,Influencer,Click,0,0,0
+2024-12-24,Electronics,Influencer,Purchase,1,4,0
+2024-12-11,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-02-04,Clothing,Social Media,View,0,0,0
+2025-03-21,Clothing,Social Media,View,0,0,0
+2024-11-02,Toys,Referral,Add to Cart,0,0,0
+2025-01-17,Toys,Referral,Click,0,0,0
+2025-02-12,Toys,Social Media,Click,0,0,0
+2024-11-18,Electronics,Influencer,View,0,0,0
+2024-12-16,Books,Social Media,Purchase,1,3,0
+2025-03-17,Clothing,Search Engine,Purchase,1,4,0
+2024-12-16,Clothing,Social Media,Click,0,0,0
+2025-03-24,Clothing,Email,Purchase,1,1,0
+2025-02-05,Home Appliances,Search Engine,Click,0,0,0
+2024-12-11,Clothing,Social Media,View,0,0,0
+2024-10-23,Clothing,Search Engine,Purchase,1,3,0
+2025-02-06,Books,Social Media,Purchase,1,4,0
+2025-03-20,Electronics,Referral,Purchase,1,3,0
+2024-10-15,Books,Referral,View,0,0,0
+2024-10-10,Toys,Email,Purchase,1,4,0
+2025-03-17,Electronics,Social Media,Purchase,1,1,0
+2024-11-05,Toys,Search Engine,View,0,0,0
+2024-10-07,Clothing,Influencer,Purchase,1,4,0
+2025-01-21,Home Appliances,Influencer,Purchase,1,2,0
+2025-01-16,Books,Influencer,View,0,0,0
+2024-10-26,Toys,Social Media,Purchase,1,4,0
+2025-03-19,Electronics,Referral,View,0,0,0
+2025-01-13,Clothing,Referral,Click,0,0,0
+2024-11-14,Books,Search Engine,Add to Cart,0,0,0
+2025-01-05,Books,Email,Click,0,0,0
+2024-11-12,Books,Referral,Click,0,0,0
+2024-11-13,Books,Email,Add to Cart,0,0,0
+2024-12-12,Home Appliances,Social Media,View,0,0,0
+2024-12-12,Electronics,Email,Purchase,1,3,0
+2025-02-26,Electronics,Referral,Purchase,1,5,0
+2025-02-26,Toys,Social Media,Purchase,1,5,0
+2024-12-27,Books,Email,Click,0,0,0
+2024-11-09,Home Appliances,Referral,Click,0,0,0
+2025-01-31,Clothing,Social Media,Click,0,0,0
+2024-11-12,Electronics,Search Engine,Add to Cart,0,0,0
+2025-03-29,Home Appliances,Search Engine,Add to Cart,0,0,0
+2024-11-22,Clothing,Email,Click,0,0,0
+2024-11-02,Clothing,Email,Add to Cart,0,0,0
+2025-02-20,Electronics,Search Engine,Purchase,1,4,0
+2025-03-17,Toys,Email,Purchase,1,2,0
+2024-12-29,Clothing,Referral,Purchase,1,4,0
+2024-12-29,Books,Search Engine,View,0,0,0
+2024-10-27,Toys,Referral,View,0,0,0
+2024-10-14,Clothing,Referral,Add to Cart,0,0,0
+2025-03-25,Toys,Referral,Click,0,0,0
+2024-12-12,Electronics,Social Media,Click,0,0,0
+2025-01-03,Electronics,Influencer,View,0,0,0
+2024-10-09,Clothing,Email,Add to Cart,0,0,0
+2025-01-14,Home Appliances,Email,View,0,0,0
+2025-02-14,Electronics,Search Engine,Click,0,0,0
+2024-10-26,Clothing,Influencer,Click,0,0,0
+2025-01-22,Books,Referral,Add to Cart,0,0,0
+2025-03-04,Electronics,Email,Add to Cart,0,0,0
+2024-10-25,Home Appliances,Influencer,Purchase,1,1,0
+2024-11-25,Books,Referral,View,0,0,0
+2024-11-06,Home Appliances,Search Engine,Click,0,0,0
+2025-01-19,Electronics,Influencer,Add to Cart,0,0,0
+2025-01-10,Toys,Search Engine,Click,0,0,0
+2025-01-17,Clothing,Referral,View,0,0,0
+2024-12-01,Electronics,Referral,View,0,0,0
+2024-12-28,Books,Referral,Add to Cart,0,0,0
+2024-12-10,Books,Referral,Add to Cart,0,0,0
+2025-03-26,Home Appliances,Referral,Add to Cart,0,0,0
+2025-03-19,Clothing,Referral,Purchase,1,5,0
+2025-01-04,Books,Search Engine,Click,0,0,0
+2025-02-13,Toys,Social Media,Add to Cart,0,0,0
+2025-01-03,Clothing,Email,View,0,0,0
+2025-01-13,Electronics,Search Engine,View,0,0,0
+2025-01-09,Clothing,Referral,Purchase,1,4,0
+2025-03-25,Electronics,Influencer,Add to Cart,0,0,0
+2025-03-22,Toys,Social Media,View,0,0,0
+2025-02-23,Clothing,Influencer,Add to Cart,0,0,0
+2024-12-21,Electronics,Influencer,Add to Cart,0,0,0
+2025-03-07,Toys,Referral,Add to Cart,0,0,0
+2024-10-11,Electronics,Email,Add to Cart,0,0,0
+2025-02-23,Home Appliances,Search Engine,View,0,0,0
+2025-01-21,Clothing,Social Media,Add to Cart,0,0,0
+2025-02-28,Home Appliances,Search Engine,Purchase,1,1,0
+2025-02-11,Clothing,Search Engine,Click,0,0,0
+2024-12-17,Books,Referral,Add to Cart,0,0,0
+2025-01-20,Books,Search Engine,View,0,0,0
+2025-01-10,Toys,Influencer,Add to Cart,0,0,0
+2025-02-08,Toys,Referral,View,0,0,0
+2025-01-09,Clothing,Referral,Add to Cart,0,0,0
+2024-10-17,Home Appliances,Email,Click,0,0,0
+2024-12-19,Home Appliances,Email,Add to Cart,0,0,0
+2024-12-07,Books,Referral,Click,0,0,0
+2025-01-22,Toys,Referral,Purchase,1,2,0
+2025-02-12,Toys,Email,Add to Cart,0,0,0
+2024-10-24,Home Appliances,Email,Add to Cart,0,0,0
+2025-01-11,Books,Email,Purchase,1,2,0
+2024-12-10,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-03-03,Clothing,Referral,Add to Cart,0,0,0
+2024-11-08,Clothing,Email,Add to Cart,0,0,0
+2024-11-16,Electronics,Social Media,View,0,0,0
+2025-01-23,Books,Referral,View,0,0,0
+2025-03-10,Books,Referral,Click,0,0,0
+2025-02-07,Clothing,Influencer,Purchase,1,5,0
+2024-11-28,Home Appliances,Influencer,Click,0,0,0
+2025-01-05,Electronics,Referral,Click,0,0,0
+2024-11-18,Clothing,Email,Purchase,1,4,0
+2024-12-06,Toys,Email,View,0,0,0
+2025-01-11,Home Appliances,Email,View,0,0,0
+2024-10-06,Home Appliances,Search Engine,View,0,0,0
+2025-02-05,Electronics,Referral,Add to Cart,0,0,0
+2025-02-23,Electronics,Referral,Add to Cart,0,0,0
+2025-01-02,Clothing,Influencer,Click,0,0,0
+2025-01-10,Clothing,Influencer,Add to Cart,0,0,0
+2025-02-23,Toys,Influencer,Purchase,1,1,0
+2025-01-18,Home Appliances,Social Media,Click,0,0,0
+2025-02-16,Home Appliances,Email,View,0,0,0
+2024-10-07,Toys,Referral,View,0,0,0
+2025-02-20,Clothing,Referral,Add to Cart,0,0,0
+2025-04-05,Toys,Influencer,Add to Cart,0,0,0
+2025-03-27,Clothing,Influencer,Click,0,0,0
+2024-11-25,Clothing,Email,Add to Cart,0,0,0
+2025-03-03,Toys,Influencer,Purchase,1,1,0
+2024-10-26,Clothing,Email,Purchase,1,1,0
+2025-03-25,Electronics,Search Engine,View,0,0,0
+2025-01-18,Electronics,Search Engine,Purchase,1,2,0
+2025-01-26,Toys,Referral,Purchase,1,5,0
+2024-10-26,Home Appliances,Influencer,Add to Cart,0,0,0
+2025-02-27,Clothing,Referral,View,0,0,0
+2025-03-09,Books,Referral,Click,0,0,0
+2024-12-14,Electronics,Search Engine,View,0,0,0
+2025-01-13,Books,Influencer,Purchase,1,4,0
+2025-01-25,Clothing,Social Media,Click,0,0,0
+2024-11-24,Toys,Influencer,Add to Cart,0,0,0
+2025-03-05,Books,Social Media,Add to Cart,0,0,0
+2024-10-16,Home Appliances,Search Engine,Purchase,1,1,0
+2025-01-28,Electronics,Search Engine,View,0,0,0
+2024-12-03,Home Appliances,Search Engine,Purchase,1,2,0
+2025-01-15,Home Appliances,Influencer,Click,0,0,0
+2024-11-11,Toys,Email,Purchase,1,1,0
+2025-01-28,Home Appliances,Referral,View,0,0,0
+2024-10-24,Home Appliances,Referral,Purchase,1,4,0
+2025-01-12,Toys,Search Engine,Click,0,0,0
+2024-12-30,Toys,Social Media,Click,0,0,0
+2024-11-03,Books,Search Engine,View,0,0,0
+2024-12-08,Home Appliances,Social Media,Purchase,1,4,0
+2024-10-12,Toys,Influencer,Click,0,0,0
+2025-01-13,Clothing,Email,Purchase,1,1,0
+2025-02-27,Toys,Referral,Purchase,1,3,0
+2024-10-09,Toys,Email,Purchase,1,2,0
+2024-12-25,Home Appliances,Search Engine,View,0,0,0
+2024-11-03,Toys,Email,Purchase,1,3,0
+2025-01-31,Books,Email,View,0,0,0
+2025-01-19,Clothing,Social Media,View,0,0,0
+2024-11-09,Clothing,Social Media,Purchase,1,5,0
+2024-10-23,Home Appliances,Search Engine,Purchase,1,2,0
+2025-03-19,Clothing,Influencer,Add to Cart,0,0,0
+2025-02-26,Toys,Influencer,Purchase,1,3,0
+2024-12-08,Electronics,Referral,View,0,0,0
+2024-12-23,Toys,Referral,Purchase,1,2,0
+2025-02-22,Home Appliances,Email,Add to Cart,0,0,0
+2024-12-17,Toys,Email,View,0,0,0
+2024-10-23,Toys,Influencer,View,0,0,0
+2024-12-13,Home Appliances,Email,Click,0,0,0
+2024-10-19,Books,Referral,Purchase,1,3,0
+2024-11-15,Books,Search Engine,Purchase,1,4,0
+2025-03-19,Toys,Social Media,Click,0,0,0
+2025-01-28,Books,Social Media,Click,0,0,0
+2025-01-08,Toys,Search Engine,Add to Cart,0,0,0
+2025-02-15,Books,Social Media,Add to Cart,0,0,0
+2025-01-02,Clothing,Social Media,View,0,0,0
+2024-10-23,Electronics,Email,Click,0,0,0
+2024-10-10,Books,Search Engine,Click,0,0,0
+2024-11-10,Electronics,Social Media,Purchase,1,4,0
+2025-02-14,Toys,Search Engine,Click,0,0,0
+2025-03-13,Books,Referral,Purchase,1,5,0
+2024-10-18,Books,Search Engine,Add to Cart,0,0,0
+2025-04-01,Clothing,Social Media,Purchase,1,5,0
+2025-02-01,Electronics,Referral,Purchase,1,2,0
+2024-10-24,Toys,Influencer,Purchase,1,5,0
+2025-02-04,Toys,Influencer,View,0,0,0
+2025-02-25,Electronics,Referral,Purchase,1,3,0
+2024-12-26,Electronics,Referral,Purchase,1,1,0
+2025-01-18,Clothing,Referral,Add to Cart,0,0,0
+2025-03-25,Books,Referral,View,0,0,0
+2024-11-25,Toys,Referral,View,0,0,0
+2025-02-07,Clothing,Search Engine,View,0,0,0
+2024-11-16,Toys,Referral,Add to Cart,0,0,0
+2025-01-16,Toys,Email,Add to Cart,0,0,0
+2025-03-26,Toys,Email,Purchase,1,4,0
+2024-12-20,Toys,Search Engine,Add to Cart,0,0,0
+2024-11-30,Books,Influencer,Add to Cart,0,0,0
+2024-10-09,Home Appliances,Social Media,View,0,0,0
+2025-01-16,Toys,Influencer,Add to Cart,0,0,0
+2024-10-20,Electronics,Search Engine,Click,0,0,0
+2024-11-13,Toys,Email,Add to Cart,0,0,0
+2024-10-26,Toys,Email,Add to Cart,0,0,0
+2025-03-12,Books,Email,Click,0,0,0
+2025-02-13,Toys,Email,Add to Cart,0,0,0
+2024-10-13,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-12-29,Home Appliances,Influencer,View,0,0,0
+2024-12-12,Electronics,Referral,Click,0,0,0
+2025-01-18,Toys,Social Media,Purchase,1,3,0
+2025-02-14,Clothing,Influencer,Click,0,0,0
+2024-10-10,Books,Social Media,View,0,0,0
+2024-11-11,Home Appliances,Email,Click,0,0,0
+2025-01-13,Toys,Social Media,Purchase,1,4,0
+2024-12-30,Books,Social Media,Purchase,1,2,0
+2025-04-06,Clothing,Referral,Add to Cart,0,0,0
+2024-11-07,Electronics,Influencer,View,0,0,0
+2025-01-03,Electronics,Social Media,Purchase,1,4,0
+2025-02-20,Books,Influencer,Purchase,1,5,0
+2025-01-17,Clothing,Search Engine,Purchase,1,4,0
+2025-02-09,Home Appliances,Social Media,Purchase,1,1,0
+2025-03-19,Home Appliances,Search Engine,Purchase,1,3,0
+2025-03-22,Toys,Email,View,0,0,0
+2024-11-18,Toys,Influencer,Purchase,1,5,0
+2024-11-04,Home Appliances,Influencer,Add to Cart,0,0,0
+2025-03-13,Home Appliances,Email,Add to Cart,0,0,0
+2025-03-21,Toys,Search Engine,Purchase,1,2,0
+2025-01-25,Toys,Social Media,Add to Cart,0,0,0
+2025-01-29,Clothing,Influencer,View,0,0,0
+2024-10-11,Electronics,Email,View,0,0,0
+2024-10-12,Books,Email,View,0,0,0
+2024-11-29,Books,Influencer,Click,0,0,0
+2025-01-24,Home Appliances,Influencer,Click,0,0,0
+2025-02-04,Electronics,Email,View,0,0,0
+2025-04-04,Electronics,Referral,Click,0,0,0
+2025-02-04,Toys,Email,View,0,0,0
+2025-03-14,Electronics,Referral,Click,0,0,0
+2024-12-27,Books,Referral,Click,0,0,0
+2024-12-04,Electronics,Social Media,Add to Cart,0,0,0
+2025-04-03,Home Appliances,Search Engine,View,0,0,0
+2025-02-14,Books,Influencer,Purchase,1,3,0
+2025-03-06,Home Appliances,Social Media,View,0,0,0
+2024-11-13,Home Appliances,Email,Purchase,1,4,0
+2025-02-25,Home Appliances,Email,Add to Cart,0,0,0
+2024-12-27,Home Appliances,Social Media,Purchase,1,1,0
+2025-03-31,Books,Social Media,Purchase,1,2,0
+2025-02-04,Books,Email,Click,0,0,0
+2025-02-13,Toys,Search Engine,Click,0,0,0
+2024-12-18,Toys,Email,Purchase,1,3,0
+2024-12-04,Electronics,Email,View,0,0,0
+2024-11-23,Electronics,Referral,Add to Cart,0,0,0
+2025-02-19,Books,Email,Purchase,1,2,0
+2024-12-26,Electronics,Email,Purchase,1,3,0
+2025-03-30,Clothing,Influencer,Purchase,1,5,0
+2025-01-27,Electronics,Referral,Purchase,1,4,0
+2024-11-21,Books,Search Engine,View,0,0,0
+2025-02-24,Toys,Social Media,View,0,0,0
+2025-01-11,Books,Search Engine,View,0,0,0
+2025-01-09,Toys,Referral,Add to Cart,0,0,0
+2025-01-18,Home Appliances,Influencer,Purchase,1,1,0
+2025-01-04,Electronics,Influencer,Add to Cart,0,0,0
+2024-11-24,Electronics,Search Engine,Add to Cart,0,0,0
+2025-03-11,Clothing,Social Media,View,0,0,0
+2025-01-28,Books,Social Media,Add to Cart,0,0,0
+2025-03-17,Books,Email,Add to Cart,0,0,0
+2024-11-11,Books,Email,Purchase,1,2,0
+2025-02-23,Clothing,Email,Click,0,0,0
+2025-03-10,Electronics,Referral,Click,0,0,0
+2025-02-23,Books,Search Engine,View,0,0,0
+2025-01-09,Toys,Influencer,Purchase,1,5,0
+2025-02-03,Books,Email,View,0,0,0
+2025-01-18,Home Appliances,Email,Add to Cart,0,0,0
+2025-01-02,Electronics,Search Engine,View,0,0,0
+2025-02-19,Clothing,Referral,Purchase,1,5,0
+2024-12-24,Clothing,Referral,Click,0,0,0
+2024-11-09,Electronics,Email,Click,0,0,0
+2024-10-17,Books,Email,Purchase,1,5,0
+2024-12-10,Electronics,Social Media,Click,0,0,0
+2024-11-18,Electronics,Social Media,View,0,0,0
+2024-12-29,Home Appliances,Email,Purchase,1,5,0
+2025-01-11,Clothing,Referral,View,0,0,0
+2024-11-05,Electronics,Email,Purchase,1,5,0
+2024-11-16,Toys,Social Media,View,0,0,0
+2025-03-27,Clothing,Search Engine,Add to Cart,0,0,0
+2025-01-03,Books,Influencer,View,0,0,0
+2024-11-13,Toys,Referral,Click,0,0,0
+2025-02-11,Home Appliances,Social Media,View,0,0,0
+2024-11-06,Toys,Social Media,Add to Cart,0,0,0
+2024-10-15,Electronics,Email,Add to Cart,0,0,0
+2025-02-05,Clothing,Search Engine,Click,0,0,0
+2024-12-31,Home Appliances,Referral,Click,0,0,0
+2025-04-04,Books,Social Media,View,0,0,0
+2025-01-21,Clothing,Email,Purchase,1,2,0
+2024-11-22,Electronics,Search Engine,View,0,0,0
+2024-10-07,Electronics,Email,Click,0,0,0
+2025-03-02,Electronics,Referral,Add to Cart,0,0,0
+2025-03-09,Books,Search Engine,Click,0,0,0
+2025-04-02,Clothing,Social Media,Add to Cart,0,0,0
+2024-11-22,Toys,Search Engine,Purchase,1,2,0
+2024-10-10,Clothing,Referral,View,0,0,0
+2025-02-17,Toys,Social Media,Purchase,1,5,0
+2025-01-25,Electronics,Influencer,Add to Cart,0,0,0
+2024-12-25,Books,Email,Click,0,0,0
+2025-01-28,Clothing,Email,View,0,0,0
+2025-02-16,Toys,Influencer,Click,0,0,0
+2025-03-31,Books,Social Media,Add to Cart,0,0,0
+2024-12-05,Electronics,Social Media,View,0,0,0
+2025-03-24,Clothing,Search Engine,Purchase,1,2,0
+2025-03-20,Clothing,Email,View,0,0,0
+2024-10-27,Home Appliances,Influencer,Click,0,0,0
+2024-12-05,Books,Influencer,Add to Cart,0,0,0
+2025-01-06,Toys,Search Engine,View,0,0,0
+2025-01-10,Electronics,Email,Click,0,0,0
+2024-12-07,Clothing,Email,Purchase,1,5,0
+2024-10-31,Electronics,Email,Click,0,0,0
+2025-04-01,Books,Referral,Add to Cart,0,0,0
+2024-10-08,Books,Social Media,Add to Cart,0,0,0
+2025-04-06,Clothing,Email,Add to Cart,0,0,0
+2024-11-12,Clothing,Email,Click,0,0,0
+2025-01-20,Books,Social Media,Purchase,1,2,0
+2024-12-29,Electronics,Search Engine,Purchase,1,1,0
+2025-02-02,Books,Social Media,Click,0,0,0
+2025-03-30,Toys,Search Engine,Click,0,0,0
+2025-04-04,Books,Influencer,Click,0,0,0
+2025-01-22,Books,Social Media,Add to Cart,0,0,0
+2024-11-03,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-02-16,Clothing,Email,View,0,0,0
+2024-11-10,Home Appliances,Social Media,View,0,0,0
+2024-10-24,Books,Search Engine,Purchase,1,2,0
+2024-11-06,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-01-08,Toys,Social Media,Click,0,0,0
+2025-02-20,Toys,Referral,Click,0,0,0
+2025-01-19,Electronics,Search Engine,Purchase,1,2,0
+2025-02-09,Toys,Search Engine,Purchase,1,3,0
+2025-02-19,Electronics,Search Engine,Click,0,0,0
+2025-02-18,Clothing,Influencer,Purchase,1,5,0
+2025-03-24,Clothing,Referral,Click,0,0,0
+2025-02-12,Toys,Email,Purchase,1,1,0
+2025-02-24,Electronics,Search Engine,View,0,0,0
+2024-11-28,Books,Referral,Purchase,1,4,0
+2025-01-05,Electronics,Search Engine,Purchase,1,2,0
+2024-12-25,Electronics,Referral,View,0,0,0
+2025-04-06,Books,Social Media,Click,0,0,0
+2025-04-04,Home Appliances,Influencer,Click,0,0,0
+2024-11-20,Electronics,Email,Purchase,1,3,0
+2025-02-28,Clothing,Search Engine,View,0,0,0
+2024-12-28,Books,Search Engine,Click,0,0,0
+2025-03-02,Books,Social Media,Add to Cart,0,0,0
+2024-12-21,Books,Email,View,0,0,0
+2025-02-13,Books,Influencer,View,0,0,0
+2025-02-03,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-02-01,Toys,Referral,Click,0,0,0
+2024-11-10,Electronics,Referral,Add to Cart,0,0,0
+2024-10-29,Electronics,Referral,Add to Cart,0,0,0
+2025-02-10,Electronics,Email,Purchase,1,3,0
+2025-03-23,Books,Referral,View,0,0,0
+2024-11-07,Home Appliances,Influencer,Click,0,0,0
+2025-01-06,Toys,Email,Click,0,0,0
+2024-12-19,Clothing,Influencer,Click,0,0,0
+2025-01-09,Toys,Email,Purchase,1,5,0
+2025-01-19,Clothing,Social Media,Add to Cart,0,0,0
+2024-11-30,Home Appliances,Influencer,Purchase,1,3,0
+2025-02-17,Electronics,Email,Add to Cart,0,0,0
+2024-12-28,Home Appliances,Search Engine,Purchase,1,5,0
+2024-11-28,Toys,Email,Purchase,1,5,0
+2025-02-25,Toys,Influencer,Purchase,1,5,0
+2025-03-30,Home Appliances,Email,Click,0,0,0
+2025-04-06,Books,Email,View,0,0,0
+2024-10-09,Books,Social Media,Add to Cart,0,0,0
+2025-03-31,Electronics,Email,Click,0,0,0
+2024-10-28,Home Appliances,Email,Click,0,0,0
+2025-02-28,Books,Social Media,Click,0,0,0
+2025-02-16,Toys,Email,Add to Cart,0,0,0
+2025-02-04,Books,Referral,Click,0,0,0
+2025-02-18,Books,Influencer,Purchase,1,4,0
+2024-11-15,Electronics,Influencer,Click,0,0,0
+2025-02-02,Electronics,Email,Click,0,0,0
+2025-03-08,Toys,Influencer,Purchase,1,5,0
+2025-02-08,Home Appliances,Influencer,Purchase,1,5,0
+2024-12-13,Toys,Referral,Purchase,1,4,0
+2024-10-10,Home Appliances,Referral,Click,0,0,0
+2024-10-20,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-03-11,Clothing,Search Engine,Add to Cart,0,0,0
+2024-11-26,Home Appliances,Email,Click,0,0,0
+2024-10-20,Home Appliances,Influencer,Purchase,1,2,0
+2024-10-17,Toys,Social Media,Add to Cart,0,0,0
+2025-01-31,Clothing,Social Media,Click,0,0,0
+2025-02-16,Clothing,Social Media,View,0,0,0
+2025-03-03,Electronics,Influencer,Click,0,0,0
+2025-01-26,Books,Influencer,Add to Cart,0,0,0
+2025-03-27,Clothing,Social Media,View,0,0,0
+2024-10-21,Home Appliances,Influencer,Click,0,0,0
+2024-11-07,Home Appliances,Search Engine,Click,0,0,0
+2024-11-05,Toys,Influencer,View,0,0,0
+2025-03-20,Electronics,Search Engine,Purchase,1,2,0
+2025-02-03,Books,Influencer,Click,0,0,0
+2025-03-31,Electronics,Referral,Add to Cart,0,0,0
+2025-01-18,Home Appliances,Search Engine,Add to Cart,0,0,0
+2024-10-23,Toys,Social Media,Purchase,1,3,0
+2024-10-11,Electronics,Search Engine,View,0,0,0
+2024-11-23,Clothing,Referral,View,0,0,0
+2024-11-13,Home Appliances,Email,Purchase,1,5,0
+2024-12-26,Clothing,Search Engine,Add to Cart,0,0,0
+2025-01-21,Electronics,Influencer,View,0,0,0
+2024-10-11,Toys,Social Media,Click,0,0,0
+2024-11-08,Home Appliances,Social Media,View,0,0,0
+2025-01-20,Electronics,Referral,Purchase,1,1,0
+2024-11-19,Toys,Search Engine,Click,0,0,0
+2024-12-12,Books,Influencer,View,0,0,0
+2025-03-31,Home Appliances,Search Engine,Click,0,0,0
+2024-12-12,Books,Influencer,Purchase,1,3,0
+2025-02-01,Electronics,Influencer,Add to Cart,0,0,0
+2024-10-28,Home Appliances,Influencer,Purchase,1,5,0
+2024-10-10,Electronics,Social Media,Purchase,1,4,0
+2025-03-04,Books,Influencer,Click,0,0,0
+2024-10-23,Books,Search Engine,Click,0,0,0
+2025-03-22,Toys,Referral,View,0,0,0
+2025-01-13,Clothing,Social Media,Add to Cart,0,0,0
+2024-12-02,Books,Referral,Add to Cart,0,0,0
+2024-10-23,Electronics,Referral,Purchase,1,1,0
+2025-02-03,Electronics,Search Engine,Add to Cart,0,0,0
+2025-01-13,Books,Social Media,Purchase,1,5,0
+2025-03-22,Clothing,Social Media,Click,0,0,0
+2024-11-16,Books,Influencer,Purchase,1,1,0
+2025-02-06,Home Appliances,Referral,Add to Cart,0,0,0
+2025-01-27,Books,Referral,Purchase,1,2,0
+2025-04-04,Electronics,Email,Click,0,0,0
+2024-10-27,Home Appliances,Influencer,Purchase,1,1,0
+2025-03-31,Home Appliances,Search Engine,Click,0,0,0
+2024-10-13,Books,Social Media,View,0,0,0
+2025-03-26,Electronics,Influencer,Purchase,1,1,0
+2024-10-14,Toys,Influencer,Purchase,1,5,0
+2025-02-06,Books,Influencer,Purchase,1,1,0
+2024-11-29,Home Appliances,Referral,View,0,0,0
+2024-10-29,Home Appliances,Social Media,View,0,0,0
+2025-03-06,Clothing,Influencer,Purchase,1,2,0
+2024-10-08,Home Appliances,Social Media,View,0,0,0
+2025-03-26,Home Appliances,Influencer,Purchase,1,3,0
+2024-10-26,Electronics,Influencer,Add to Cart,0,0,0
+2025-01-07,Toys,Email,Click,0,0,0
+2025-04-05,Clothing,Email,Click,0,0,0
+2024-12-31,Toys,Influencer,Add to Cart,0,0,0
+2025-01-09,Home Appliances,Influencer,Add to Cart,0,0,0
+2024-10-08,Electronics,Referral,Add to Cart,0,0,0
+2024-12-31,Clothing,Email,Click,0,0,0
+2025-03-05,Toys,Influencer,Add to Cart,0,0,0
+2025-03-03,Books,Search Engine,Add to Cart,0,0,0
+2025-01-23,Clothing,Email,Click,0,0,0
+2025-02-18,Clothing,Referral,Click,0,0,0
+2024-11-03,Clothing,Referral,View,0,0,0
+2025-01-19,Books,Search Engine,View,0,0,0
+2025-01-08,Electronics,Social Media,View,0,0,0
+2024-10-31,Books,Influencer,Add to Cart,0,0,0
+2024-11-20,Home Appliances,Social Media,Purchase,1,5,0
+2025-02-22,Toys,Influencer,Click,0,0,0
+2024-12-01,Home Appliances,Email,View,0,0,0
+2024-11-03,Clothing,Social Media,Click,0,0,0
+2025-01-12,Clothing,Influencer,Click,0,0,0
+2024-11-10,Clothing,Social Media,View,0,0,0
+2025-01-25,Books,Email,View,0,0,0
+2024-10-31,Electronics,Search Engine,Purchase,1,1,0
+2024-12-20,Clothing,Email,View,0,0,0
+2024-10-18,Toys,Referral,View,0,0,0
+2024-12-28,Books,Email,Add to Cart,0,0,0
+2024-10-25,Electronics,Email,Add to Cart,0,0,0
+2024-12-03,Electronics,Email,View,0,0,0
+2024-11-09,Toys,Social Media,Click,0,0,0
+2024-12-07,Clothing,Influencer,View,0,0,0
+2025-02-08,Electronics,Social Media,Add to Cart,0,0,0
+2024-12-09,Toys,Influencer,Add to Cart,0,0,0
+2024-11-24,Clothing,Referral,Click,0,0,0
+2025-02-18,Toys,Referral,View,0,0,0
+2025-01-05,Electronics,Referral,View,0,0,0
+2025-04-01,Toys,Social Media,Click,0,0,0
+2025-03-07,Home Appliances,Social Media,View,0,0,0
+2025-01-29,Electronics,Social Media,Purchase,1,3,0
+2024-12-20,Toys,Social Media,Purchase,1,1,0
+2025-01-08,Clothing,Influencer,Purchase,1,4,0
+2024-10-06,Clothing,Referral,Click,0,0,0
+2024-12-08,Books,Email,Add to Cart,0,0,0
+2025-03-01,Electronics,Search Engine,View,0,0,0
+2025-01-17,Toys,Social Media,Purchase,1,3,0
+2024-11-20,Home Appliances,Referral,View,0,0,0
+2024-10-08,Electronics,Influencer,Purchase,1,1,0
+2024-12-10,Books,Influencer,Purchase,1,5,0
+2025-01-31,Home Appliances,Search Engine,Click,0,0,0
+2024-12-18,Toys,Search Engine,Add to Cart,0,0,0
+2025-02-04,Books,Social Media,View,0,0,0
+2024-11-17,Books,Influencer,Click,0,0,0
+2025-02-02,Electronics,Search Engine,View,0,0,0
+2025-01-06,Books,Search Engine,View,0,0,0
+2025-02-01,Electronics,Social Media,Purchase,1,4,0
+2024-10-20,Toys,Email,Click,0,0,0
+2025-02-09,Electronics,Influencer,Click,0,0,0
+2024-12-18,Home Appliances,Social Media,Purchase,1,1,0
+2024-12-22,Clothing,Search Engine,Purchase,1,3,0
+2025-03-16,Toys,Referral,Add to Cart,0,0,0
+2024-10-11,Books,Influencer,Purchase,1,5,0
+2025-04-05,Books,Search Engine,Add to Cart,0,0,0
+2024-12-19,Clothing,Search Engine,View,0,0,0
+2025-03-13,Electronics,Influencer,Purchase,1,4,0
+2025-02-01,Clothing,Social Media,View,0,0,0
+2025-01-12,Electronics,Email,View,0,0,0
+2024-11-27,Books,Email,Click,0,0,0
+2025-02-17,Books,Referral,Add to Cart,0,0,0
+2025-04-05,Clothing,Influencer,View,0,0,0
+2025-03-17,Electronics,Referral,Purchase,1,4,0
+2024-12-03,Clothing,Influencer,Purchase,1,4,0
+2025-03-12,Toys,Influencer,Add to Cart,0,0,0
+2025-03-29,Toys,Referral,View,0,0,0
+2025-03-03,Electronics,Search Engine,View,0,0,0
+2025-03-05,Books,Search Engine,Add to Cart,0,0,0
+2024-10-23,Books,Search Engine,Purchase,1,1,0
+2024-10-29,Electronics,Social Media,Add to Cart,0,0,0
+2024-10-17,Clothing,Search Engine,Purchase,1,2,0
+2025-04-01,Home Appliances,Search Engine,Purchase,1,1,0
+2025-01-13,Toys,Search Engine,Purchase,1,4,0
+2024-12-13,Toys,Social Media,View,0,0,0
+2025-03-30,Books,Influencer,Purchase,1,5,0
+2024-12-13,Books,Referral,Add to Cart,0,0,0
+2025-01-19,Home Appliances,Influencer,View,0,0,0
+2025-03-03,Electronics,Referral,View,0,0,0
+2025-04-03,Clothing,Influencer,Add to Cart,0,0,0
+2024-10-16,Toys,Email,Add to Cart,0,0,0
+2024-12-26,Books,Email,Purchase,1,3,0
+2024-11-05,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-02-05,Electronics,Social Media,Click,0,0,0
+2024-10-11,Clothing,Influencer,View,0,0,0
+2025-01-24,Electronics,Influencer,View,0,0,0
+2024-11-16,Home Appliances,Social Media,View,0,0,0
+2024-10-26,Toys,Influencer,View,0,0,0
+2024-12-31,Books,Search Engine,Purchase,1,3,0
+2024-10-17,Electronics,Search Engine,View,0,0,0
+2025-01-12,Home Appliances,Search Engine,Purchase,1,3,0
+2024-10-28,Toys,Email,Purchase,1,1,0
+2025-01-19,Clothing,Influencer,Purchase,1,5,0
+2024-10-12,Home Appliances,Social Media,Add to Cart,0,0,0
+2024-11-02,Home Appliances,Search Engine,Click,0,0,0
+2024-12-28,Books,Email,Click,0,0,0
+2025-03-09,Home Appliances,Influencer,View,0,0,0
+2024-12-01,Home Appliances,Referral,Purchase,1,2,0
+2024-12-24,Toys,Email,View,0,0,0
+2025-01-01,Toys,Influencer,Add to Cart,0,0,0
+2024-11-09,Electronics,Referral,Purchase,1,4,0
+2025-02-10,Clothing,Influencer,View,0,0,0
+2025-03-22,Home Appliances,Referral,Add to Cart,0,0,0
+2024-10-28,Books,Referral,Add to Cart,0,0,0
+2025-02-20,Clothing,Search Engine,Purchase,1,3,0
+2025-02-05,Toys,Referral,Purchase,1,5,0
+2025-02-07,Clothing,Email,Click,0,0,0
+2025-03-22,Toys,Search Engine,Click,0,0,0
+2025-03-13,Books,Influencer,Purchase,1,5,0
+2025-03-08,Electronics,Referral,Click,0,0,0
+2025-02-26,Home Appliances,Search Engine,Click,0,0,0
+2024-11-26,Clothing,Social Media,Add to Cart,0,0,0
+2025-01-24,Books,Search Engine,Add to Cart,0,0,0
+2024-12-30,Electronics,Social Media,Purchase,1,3,0
+2025-01-29,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-03-20,Toys,Social Media,Purchase,1,2,0
+2025-02-13,Electronics,Social Media,Click,0,0,0
+2024-12-24,Electronics,Social Media,Add to Cart,0,0,0
+2025-04-03,Books,Search Engine,Purchase,1,4,0
+2024-11-01,Electronics,Social Media,Click,0,0,0
+2025-02-15,Home Appliances,Social Media,View,0,0,0
+2024-12-14,Home Appliances,Influencer,Click,0,0,0
+2024-10-31,Electronics,Search Engine,View,0,0,0
+2025-02-01,Electronics,Email,Add to Cart,0,0,0
+2025-01-02,Toys,Influencer,View,0,0,0
+2025-03-10,Books,Influencer,View,0,0,0
+2025-04-02,Books,Social Media,Click,0,0,0
+2025-03-11,Electronics,Referral,View,0,0,0
+2024-11-12,Toys,Referral,Add to Cart,0,0,0
+2024-11-08,Books,Email,Click,0,0,0
+2025-01-20,Toys,Email,Add to Cart,0,0,0
+2024-10-29,Home Appliances,Referral,Purchase,1,2,0
+2024-12-04,Books,Social Media,Click,0,0,0
+2024-11-09,Electronics,Social Media,Click,0,0,0
+2025-01-28,Home Appliances,Search Engine,Purchase,1,3,0
+2024-11-02,Toys,Email,Purchase,1,5,0
+2025-03-28,Home Appliances,Email,Add to Cart,0,0,0
+2024-12-02,Toys,Search Engine,Purchase,1,2,0
+2024-10-14,Home Appliances,Social Media,Add to Cart,0,0,0
+2025-02-26,Books,Influencer,Add to Cart,0,0,0
+2024-12-15,Electronics,Referral,View,0,0,0
+2024-11-18,Electronics,Social Media,Add to Cart,0,0,0
+2024-12-26,Toys,Search Engine,Add to Cart,0,0,0
+2024-11-25,Home Appliances,Email,Click,0,0,0
+2024-12-17,Books,Search Engine,View,0,0,0
+2024-12-25,Books,Influencer,Add to Cart,0,0,0
+2024-11-26,Electronics,Social Media,Add to Cart,0,0,0
+2025-01-23,Clothing,Social Media,Purchase,1,3,0
+2024-10-21,Books,Email,Add to Cart,0,0,0
+2025-02-15,Electronics,Search Engine,Purchase,1,4,0
+2024-10-09,Home Appliances,Search Engine,View,0,0,0
+2025-01-04,Clothing,Influencer,View,0,0,0
+2024-11-24,Home Appliances,Search Engine,Add to Cart,0,0,0
+2025-04-02,Books,Email,View,0,0,0
+2024-10-07,Clothing,Search Engine,Click,0,0,0
+2024-10-08,Electronics,Search Engine,Click,0,0,0
+2024-10-28,Home Appliances,Influencer,View,0,0,0
