@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 
 # Load new data
-data = pd.read_csv('large_product_sales_dataa.csv')
+data = pd.read_csv('large_product_sales_500k.csv')
 data['Date'] = pd.to_datetime(data['Date'])
 
 # Set the page configuration
@@ -201,10 +201,6 @@ st.markdown("""
 # Footer section
 st.markdown("---")
 st.markdown("By **Jordan Makgetla**")
-
-
-
-
 
 
 
