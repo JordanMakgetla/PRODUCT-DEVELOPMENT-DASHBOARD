@@ -1,212 +1,188 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import plotly.express as px
 import numpy as np
 
 # Load new data
 data = pd.read_csv('large_product_sales_500k.csv')
+data.columns = data.columns.str.strip()
 data['Date'] = pd.to_datetime(data['Date'])
 
-# Set the page configuration
+# Set the page config
 st.set_page_config(
     page_title="AI Solutions Product Sales Dashboard", 
     page_icon="📊", 
     layout="wide"
 )
 
-# Add some title and description
-st.title("📊 AI Solutions Product Sales Dashboard")
+# Title and description with reduced font
 st.markdown("""
-This dashboard provides insights into AI-Solutions' product sales, customer interactions, and the effectiveness of marketing strategies. 
-Use the interactive filters below to explore the data in various ways.
-""")
+<h5 style='text-align: center; font-size:16px;'>📊 AI Solutions Product Sales Dashboard</h5>
+<p style='text-align: center;'>Explore interactive insights on sales, strategies, and conversions.</p>
+""", unsafe_allow_html=True)
 
-# Sidebar filters for user interactivity
-st.sidebar.header("Filter Data")
+# Filter section in sidebar
+with st.sidebar:
+    st.markdown("<h6 style='margin-bottom: 10px;'>Filters</h6>", unsafe_allow_html=True)
+    start_date = st.date_input('Start Date', data['Date'].min())
+    end_date = st.date_input('End Date', data['Date'].max())
+    product_options = ['All'] + sorted(data['ProductType'].unique())
+    selected_product = st.selectbox('Product Type', product_options)
+    strategy_options = ['All'] + sorted(data['MarketingStrategy'].unique())
+    selected_strategy = st.selectbox('Marketing Strategy', strategy_options)
+    team_options = ['All'] + sorted(data['SalesTeamName'].dropna().unique())
+    selected_team = st.selectbox('Sales Team', team_options)
 
-# Start Date and End Date filters
-start_date = st.sidebar.date_input('Start Date', data['Date'].min())
-end_date = st.sidebar.date_input('End Date', data['Date'].max())
-
-# Product Type filter (Including "All" option)
-product_options = ['All'] + list(data['ProductType'].unique())  # Adding "All" as an option
-selected_product = st.sidebar.selectbox('Select Product Type', product_options)
-
-# Marketing Strategy filter (Including "All" option)
-strategy_options = ['All'] + list(data['MarketingStrategy'].unique())  # Adding "All" as an option
-selected_strategy = st.sidebar.selectbox('Select Marketing Strategy', strategy_options)
-
-# Region filter (Including "All" option)
-region_options = ['All'] + list(data['Region'].unique())  # Adding "All" as an option
-selected_region = st.sidebar.selectbox('Select Region', region_options)
-
-# Filter data based on user input
-filtered_data = data[(data['Date'] >= pd.to_datetime(start_date)) & (data['Date'] <= pd.to_datetime(end_date))]
-
-# Apply filters based on the selected product type, marketing strategy, and region
+# Apply filters
+data_filtered = data[(data['Date'] >= pd.to_datetime(start_date)) & (data['Date'] <= pd.to_datetime(end_date))]
 if selected_product != 'All':
-    filtered_data = filtered_data[filtered_data['ProductType'] == selected_product]
-
+    data_filtered = data_filtered[data_filtered['ProductType'] == selected_product]
 if selected_strategy != 'All':
-    filtered_data = filtered_data[filtered_data['MarketingStrategy'] == selected_strategy]
+    data_filtered = data_filtered[data_filtered['MarketingStrategy'] == selected_strategy]
+if selected_team != 'All':
+    data_filtered = data_filtered[data_filtered['SalesTeamName'] == selected_team]
 
-if selected_region != 'All':
-    filtered_data = filtered_data[filtered_data['Region'] == selected_region]
+scaling_factor = 100
 
-# Show summary statistics
-st.subheader("Summary Statistics")
-st.write(filtered_data.describe())
+# Tabs to organize layout - Added Data Tables tab
+tab1, tab2, tab3, tab4 = st.tabs(["Overview", "Sales Analysis", "Forecast & Teams", "Data Tables"])
 
-# Scaling factor for displaying large numbers (e.g., 100 for pounds, sales, etc.)
-scaling_factor = 100  # Adjust as needed (for example, scale sales data by 100 to make values more readable)
+# Enhanced chart settings with better spacing
+def styled_fig(fig, height=350):
+    fig.update_layout(
+        template='plotly_white',
+        height=height,
+        font=dict(size=10),
+        margin=dict(l=50, r=50, t=50, b=50),  # Increased margins
+        legend=dict(orientation='h', y=-0.2),
+        xaxis=dict(tickangle=-45 if len(fig.data[0].x) > 5 else 0)  # Rotate labels if many categories
+    )
+    return fig
 
-# Sales over time chart
-st.subheader("Product Sales Over Time")
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.lineplot(x='Date', y='QuantitySold', data=filtered_data, ax=ax, marker='o', color='teal')
-ax.set_title(f"Sales of {selected_product if selected_product != 'All' else 'All Products'} Over Time (in Pounds)")
-ax.set_xlabel('Date')
-ax.set_ylabel(f'Quantity Sold (in Pounds x {scaling_factor})')  # Display scaled value
-plt.xticks(rotation=45)
-st.pyplot(fig)
+# --- Tab 1: Overview --- #
+with tab1:
+    # Top row - Metrics
+    st.subheader("Key Metrics")
+    metric1, metric2, metric3 = st.columns(3)
+    with metric1:
+        st.metric("Total Quantity Sold", f"{int(data_filtered['QuantitySold'].sum() * scaling_factor):,}")
+    with metric2:
+        st.metric("Total Interactions", f"{len(data_filtered):,}")
+    with metric3:
+        st.metric("Average Conversion", f"{(data_filtered['Converted'].mean() * 100):.1f}%")
+    
+    st.markdown("---")
+    
+    # First chart row
+    col1, col2 = st.columns(2)
+    with col1:
+        # Team Performance Comparison
+        team_performance = data_filtered.groupby('SalesTeamName').agg({
+            'QuantitySold': 'sum',
+            'Converted': 'mean'
+        }).reset_index()
+        team_performance['QuantitySold'] = team_performance['QuantitySold'] * scaling_factor
+        team_performance['Converted'] = (team_performance['Converted'] * 100).round(1)
+        fig_team = px.bar(team_performance, 
+                         x='SalesTeamName', 
+                         y='QuantitySold',
+                         color='Converted',
+                         title='Team Performance (Size=Sales, Color=Conversion %)',
+                         labels={'QuantitySold': 'Total Sales', 'Converted': 'Conversion %'})
+        st.plotly_chart(styled_fig(fig_team, height=400), use_container_width=True)
+        
+    with col2:
+        # Sales by Region
+        region = data_filtered.groupby('Region')['QuantitySold'].sum().reset_index()
+        region['QuantitySold'] *= scaling_factor
+        fig2 = px.bar(region, x='Region', y='QuantitySold', color='Region',
+                      title="Sales by Region")
+        st.plotly_chart(styled_fig(fig2, height=400), use_container_width=True)
+    
+    st.markdown("---")
+    
+    # Second chart row
+    col3, col4 = st.columns(2)
+    with col3:
+        # Conversion Rates
+        conv = data_filtered.groupby('InteractionType')['Converted'].mean().reset_index()
+        conv['Converted'] = (conv['Converted'] * 100).round(2)
+        fig1 = px.bar(conv, x='InteractionType', y='Converted', color='InteractionType',
+                      title="Conversion Rates (%)", labels={'Converted': 'Conversion %'})
+        st.plotly_chart(styled_fig(fig1, height=400), use_container_width=True)
+    
+    with col4:
+        # Sales by Team (horizontal)
+        team_sales = data_filtered.groupby('SalesTeamName')['QuantitySold'].sum().reset_index()
+        team_sales = team_sales.sort_values(by='QuantitySold', ascending=False)
+        fig3 = px.bar(team_sales, x='QuantitySold', y='SalesTeamName', orientation='h',
+                      color='SalesTeamName', title='Sales by Team')
+        st.plotly_chart(styled_fig(fig3, height=400), use_container_width=True)
 
-# Sales over time report
-st.markdown("""
-*Report:*
-- This line chart shows the sales of the selected product (or all products) over time.
-- The x-axis represents the dates, and the y-axis shows the total quantity sold in pounds, scaled by a factor of 100 for better readability.
-- The trend of sales over time can be observed. If there are any upward or downward movements, those are significant periods to analyze for marketing strategies or sales events.
-""")
+# --- Tab 2: Sales Analysis --- #
+with tab2:
+    col1, col2 = st.columns(2)
+    with col1:
+        # Sales Over Time
+        daily_sales = data_filtered.groupby('Date')['QuantitySold'].sum().reset_index()
+        daily_sales['QuantitySold'] *= scaling_factor
+        fig4 = px.line(daily_sales, x='Date', y='QuantitySold', markers=True, 
+                       title='Sales Over Time')
+        st.plotly_chart(styled_fig(fig4, height=450), use_container_width=True)
+    
+    with col2:
+        # Sales by Strategy
+        strat = data_filtered.groupby('MarketingStrategy')['QuantitySold'].sum().reset_index()
+        strat['QuantitySold'] *= scaling_factor
+        fig5 = px.bar(strat, x='MarketingStrategy', y='QuantitySold', color='MarketingStrategy',
+                      title='Sales by Strategy')
+        st.plotly_chart(styled_fig(fig5, height=450), use_container_width=True)
+    
+    # Anomalies section with more space
+    st.markdown("---")
+    st.subheader("Anomaly Detection")
+    anomalies = data_filtered[data_filtered['Anomaly'] == 1]
+    col_anom1, col_anom2 = st.columns([1, 3])
+    with col_anom1:
+        st.metric("Anomalies Detected", len(anomalies))
+    with col_anom2:
+        if not anomalies.empty:
+            st.dataframe(anomalies[['Date', 'ProductType', 'QuantitySold', 'SalesTeamName', 'Anomaly']].head(10))
 
-# Sales distribution by marketing strategy
-st.subheader("Sales Distribution by Marketing Strategy")
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='MarketingStrategy', y='QuantitySold', data=filtered_data, ax=ax, palette="viridis")
-ax.set_title(f"Sales Distribution for {selected_product if selected_product != 'All' else 'All Products'} (in Pounds)")
-ax.set_xlabel('Marketing Strategy')
-ax.set_ylabel(f'Total Sales (in Pounds x {scaling_factor})')  # Display scaled value
-st.pyplot(fig)
+# --- Tab 3: Forecast & Teams --- #
+with tab3:
+    col1, col2 = st.columns(2)
+    with col1:
+        # 7-Day Moving Average
+        forecast = data_filtered.groupby('Date')['QuantitySold'].sum().reset_index()
+        forecast['RollingAvg'] = forecast['QuantitySold'].rolling(7).mean() * scaling_factor
+        fig6 = px.line(forecast, x='Date', y='RollingAvg', 
+                       title='7-Day Moving Average', markers=True)
+        st.plotly_chart(styled_fig(fig6, height=450), use_container_width=True)
+    
+    with col2:
+        # Strategy Effectiveness
+        strat_perf = data_filtered.groupby('MarketingStrategy').agg({
+            'QuantitySold': 'sum', 'Converted': 'mean'
+        }).reset_index()
+        strat_perf['Converted'] = (strat_perf['Converted'] * 100).round(2)
+        strat_perf['QuantitySold'] *= scaling_factor
+        fig7 = px.scatter(strat_perf, x='Converted', y='QuantitySold', 
+                          color='MarketingStrategy', size='QuantitySold', 
+                          title='Strategy Effectiveness')
+        st.plotly_chart(styled_fig(fig7, height=450), use_container_width=True)
 
-# Sales distribution by marketing strategy report
-st.markdown("""
-*Report:*
-- This bar chart compares the total sales in pounds for different marketing strategies, scaled by a factor of 100 for clarity.
-- It provides insights into which strategies have generated the highest sales and which have not performed as well.
-- The marketing strategy with the highest bar has had the most success in driving sales for the selected product (or all products).
-- This data can help identify which marketing efforts are most effective for driving revenue, and where further investment or changes may be needed.
-""")
+# --- New Tab 4: Data Tables --- #
+with tab4:
+    st.subheader("Detailed Data")
+    st.write("Filtered dataset with all records")
+    st.dataframe(data_filtered)
+    
+    st.markdown("---")
+    st.subheader("Summary Statistics")
+    st.dataframe(data_filtered.describe())
 
-# Conversion rates visualization
-st.subheader("Conversion Rates")
-conversion_data = filtered_data.groupby('InteractionType').agg({'Converted': 'mean'}).reset_index()
-conversion_data['Converted'] = (conversion_data['Converted'] * 100).round(2)  # Convert to percentage and round to 2 decimals
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='InteractionType', y='Converted', data=conversion_data, ax=ax, palette="magma")
-ax.set_title("Conversion Rates by Interaction Type")
-ax.set_xlabel('Interaction Type')
-ax.set_ylabel('Conversion Rate (%)')
-st.pyplot(fig)
-
-# Conversion rates report
-st.markdown("""
-*Report:*
-- This bar chart shows the average conversion rate by interaction type, now expressed as a percentage.
-- The conversion rate represents the percentage of users who converted after interacting with the system.
-- High conversion rates in certain interaction types may indicate that these methods are more effective at prompting action from users.
-- Comparing the conversion rates across interaction types allows you to assess the success of different engagement strategies.
-""")
-
-# Anomaly detection plot
-st.subheader("Anomaly Detection")
-anomalies = filtered_data[filtered_data['Anomaly'] == 1]
-st.write(f"Anomalies detected: {len(anomalies)}")
-
-# Show a list of anomalies (if any)
-if len(anomalies) > 0:
-    st.write(anomalies[['Date', 'ProductType', 'QuantitySold', 'Anomaly']])
-
-# Anomaly detection report
-st.markdown("""
-*Report:*
-- The anomalies detected represent irregularities or outliers in the data, where the quantity sold or other variables deviate from expected patterns.
-- Identifying and investigating anomalies can help understand why certain sales data doesn't align with typical behavior, allowing you to take corrective actions.
-- Anomalies can be due to data entry errors, product issues, or unexpected marketing events.
-""")
-
-# Sales by Region
-st.subheader("Sales by Region")
-region_sales = filtered_data.groupby('Region').agg({'QuantitySold': 'sum'}).reset_index()
-region_sales['QuantitySold'] = (region_sales['QuantitySold'] * scaling_factor).round(2)  # Scale sales data for clarity
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='Region', y='QuantitySold', data=region_sales, ax=ax, palette="coolwarm")
-ax.set_title(f"Sales by Region (in Pounds x {scaling_factor})")  # Scaled title
-ax.set_xlabel('Region')
-ax.set_ylabel(f'Total Sales (in Pounds x {scaling_factor})')  # Display scaled value
-st.pyplot(fig)
-
-# Sales by Region report
-st.markdown("""
-*Report:*
-- This bar chart compares total sales across different regions.
-- The values on the y-axis represent total sales in pounds, scaled by a factor of 100 for better clarity.
-- Higher values indicate more successful regions, while lower ones may suggest underperforming areas.
-- Identifying top-performing regions helps direct marketing resources and plan regional promotions. 
-- If there are discrepancies between regions, it may be worth investigating local factors that could impact sales (e.g., regional marketing campaigns, product availability).
-""")
-
-# Forecasting (Dummy example: simple moving average for the next 7 days)
-st.subheader("Sales Forecast (Next 7 Days)")
-forecast_data = filtered_data.groupby('Date').agg({'QuantitySold': 'sum'}).reset_index()
-forecast_data.set_index('Date', inplace=True)
-forecast_data = forecast_data.rolling(window=7).mean()
-
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.lineplot(x=forecast_data.index, y=forecast_data['QuantitySold'], ax=ax, color='orange', label='Moving Average (7 days)', marker='o')
-ax.set_title("7-Day Sales Forecast")
-ax.set_xlabel('Date')
-ax.set_ylabel(f'Quantity Sold (in Pounds x {scaling_factor})')  # Scaled y-axis
-plt.xticks(rotation=45)
-st.pyplot(fig)
-
-# Sales forecasting report
-st.markdown("""
-*Report:*
-- This line chart shows the 7-day moving average of sales, providing a forecast of the expected sales trend.
-- The moving average smooths out short-term fluctuations and highlights longer-term trends.
-- This forecast can help anticipate demand and plan future marketing strategies, stock levels, or promotional campaigns.
-""")
-
-# Marketing Strategy Performance Report
-st.subheader("Marketing Strategy Performance Report")
-
-# Compare the effectiveness of each marketing strategy
-strategy_performance = filtered_data.groupby('MarketingStrategy').agg({
-    'QuantitySold': 'sum', 
-    'Converted': 'mean'
-}).reset_index()
-
-# Round 'QuantitySold' for better presentation and clarity
-strategy_performance['QuantitySold'] = (strategy_performance['QuantitySold'] * scaling_factor).round(2)
-
-# Visualize total sales by marketing strategy
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='MarketingStrategy', y='QuantitySold', data=strategy_performance, ax=ax, palette="Set2")
-ax.set_title(f"Total Sales by Marketing Strategy (in Pounds x {scaling_factor})")
-ax.set_xlabel('Marketing Strategy')
-ax.set_ylabel(f'Total Sales (in Pounds x {scaling_factor})')  # Display scaled value
-st.pyplot(fig)
-
-# Marketing strategy performance report
-st.markdown("""
-*Report:*
-- This bar chart shows the total sales generated by each marketing strategy, scaled by a factor of 100 for clarity.
-- The values on the y-axis represent total sales in pounds, rounded to 2 decimal places for clarity.
-- The marketing strategy with the highest total sales has been the most successful at generating revenue.
-- Conversion rates for each strategy are shown earlier (on the 'Conversion Rates' chart) to help assess the relative effectiveness of each strategy.
-- These insights can inform future marketing decisions, optimizing efforts for maximum impact.
-""")
-
-# Footer section
+# Footer
 st.markdown("---")
 st.markdown("By *Jordan Makgetla*")
+
