@@ -195,59 +195,87 @@ def main():
     with tab4:
         st.subheader("📈 Sales Performance Overview with Adjustable Targets")
 
-        sales_by_team = filtered_df.groupby("SalesTeamName")["QuantitySold"].sum().reset_index().sort_values(by="QuantitySold", ascending=False)
+    sales_by_team = filtered_df.groupby("SalesTeamName")["QuantitySold"].sum().reset_index().sort_values(by="QuantitySold", ascending=False)
 
-        if not sales_by_team.empty:
-            target_pct = st.slider("Set Target as % of original sales", 50, 150, 100, step=5) / 100
-            sales_by_team['TargetSales'] = sales_by_team['QuantitySold'] * target_pct
+    if not sales_by_team.empty:
+        target_pct = st.slider("Set Target as % of original sales", 50, 150, 100, step=5) / 100
+        sales_by_team['TargetSales'] = sales_by_team['QuantitySold'] * target_pct
 
-            np.random.seed(42)
-            variation = np.random.uniform(-0.3, 0.3, size=len(sales_by_team))
-            sales_by_team['SimulatedSales'] = (sales_by_team['QuantitySold'] * (1 + variation)).round(0)
-            sales_by_team['PerformanceRatio'] = sales_by_team['SimulatedSales'] / sales_by_team['TargetSales']
+        np.random.seed(42)
+        variation = np.random.uniform(-0.3, 0.3, size=len(sales_by_team))
+        sales_by_team['SimulatedSales'] = (sales_by_team['QuantitySold'] * (1 + variation)).round(0)
+        sales_by_team['PerformanceRatio'] = sales_by_team['SimulatedSales'] / sales_by_team['TargetSales']
 
-            def performance_color(ratio):
-                if ratio >= 1.0:
-                    return 'green'
-                elif 0.9 <= ratio < 1.0:
-                    return 'orange'
-                else:
-                    return 'red'
+        def performance_color(ratio):
+            if ratio >= 1.0:
+                return 'green'
+            elif 0.9 <= ratio < 1.0:
+                return 'orange'
+            else:
+                return 'red'
 
-            sales_by_team['Color'] = sales_by_team['PerformanceRatio'].apply(performance_color)
+        sales_by_team['Color'] = sales_by_team['PerformanceRatio'].apply(performance_color)
 
-            fig = go.Figure()
-            fig.add_trace(go.Bar(x=sales_by_team['SalesTeamName'], y=sales_by_team['TargetSales'], name='Target Sales', marker_color='lightgray'))
+        # Bar chart
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=sales_by_team['SalesTeamName'], y=sales_by_team['TargetSales'], name='Target Sales', marker_color='lightgray'))
+        fig.add_trace(go.Bar(x=sales_by_team[sales_by_team['Color'] == 'green']['SalesTeamName'], y=sales_by_team[sales_by_team['Color'] == 'green']['SimulatedSales'], name='Achieved or Exceeded', marker_color='green'))
+        fig.add_trace(go.Bar(x=sales_by_team[sales_by_team['Color'] == 'orange']['SalesTeamName'], y=sales_by_team[sales_by_team['Color'] == 'orange']['SimulatedSales'], name='Almost Achieved', marker_color='orange'))
+        fig.add_trace(go.Bar(x=sales_by_team[sales_by_team['Color'] == 'red']['SalesTeamName'], y=sales_by_team[sales_by_team['Color'] == 'red']['SimulatedSales'], name='Underperformed', marker_color='red'))
 
-# Original Actual Sales bar removed and replaced by three color-based bars:
-            fig.add_trace(go.Bar(
-                x=sales_by_team[sales_by_team['Color'] == 'green']['SalesTeamName'],
-                y=sales_by_team[sales_by_team['Color'] == 'green']['SimulatedSales'],
-                name='Achieved or Exceeded',
-                marker_color='green'
-            ))
-            fig.add_trace(go.Bar(
-                x=sales_by_team[sales_by_team['Color'] == 'orange']['SalesTeamName'],
-                y=sales_by_team[sales_by_team['Color'] == 'orange']['SimulatedSales'],
-                name='Almost Achieved',
-                marker_color='orange'
-            ))
-            fig.add_trace(go.Bar(
-                x=sales_by_team[sales_by_team['Color'] == 'red']['SalesTeamName'],
-                y=sales_by_team[sales_by_team['Color'] == 'red']['SimulatedSales'],
-                name='Not Achieved',
-                marker_color='red'
-))
+        fig.update_layout(barmode='group', title='Sales Team Performance vs Target', xaxis_title='Sales Team', yaxis_title='Sales Units')
 
-            fig.update_layout(barmode='group', xaxis_title='Sales Team', yaxis_title='Sales Quantity')
+        # KPIs
+        total_simulated = int(sales_by_team['SimulatedSales'].sum())
+        avg_performance = round(sales_by_team['PerformanceRatio'].mean() * 100, 2)
+        teams_met_target = (sales_by_team['PerformanceRatio'] >= 1.0).sum()
+        teams_missed_target = len(sales_by_team) - teams_met_target
 
+        col1, col2, col3 = st.columns([3, 1, 1])  # Layout: wide chart + 2 visuals
+
+        with col1:
             st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            # Gauge chart (small size)
+            gauge_fig = go.Figure(go.Indicator(
+                mode="gauge+number",
+                value=avg_performance,
+                title={'text': "Avg Performance (%)", 'font': {'size': 14}},
+                gauge={
+                    'axis': {'range': [0, 150], 'tickwidth': 1, 'tickcolor': "darkgray"},
+                    'bar': {'color': "blue"},
+                    'steps': [
+                        {'range': [0, 90], 'color': "red"},
+                        {'range': [90, 100], 'color': "orange"},
+                        {'range': [100, 150], 'color': "green"},
+                    ],
+                }
+            ))
+            gauge_fig.update_layout(height=250, margin=dict(t=30, b=10, l=10, r=10))
+            st.plotly_chart(gauge_fig, use_container_width=True)
+
+        with col3:
+            # Donut chart (small size)
+            donut_fig = go.Figure(go.Pie(
+                labels=["Met/Exceeded", "Missed"],
+                values=[teams_met_target, teams_missed_target],
+                hole=0.6,
+                marker_colors=["green", "red"]
+            ))
+            donut_fig.update_layout(
+                title_text="Target Outcome",
+                title_font_size=14,
+                height=250,
+                margin=dict(t=30, b=10, l=10, r=10),
+                showlegend=False
+            )
+            st.plotly_chart(donut_fig, use_container_width=True)
+
+
 
 if __name__ == "__main__":
     main()
-
-
-
 
 
 
