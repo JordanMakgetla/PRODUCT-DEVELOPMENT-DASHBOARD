@@ -195,25 +195,29 @@ def main():
     with tab4:
         st.subheader("📈 Sales Performance Overview with Adjustable Targets")
 
-    sales_by_team = filtered_df.groupby("SalesTeamName")["QuantitySold"].sum().reset_index().sort_values(by="QuantitySold", ascending=False)
+        sales_by_team = filtered_df.groupby("SalesTeamName")["QuantitySold"].sum().reset_index().sort_values(by="QuantitySold", ascending=False)
 
-    if not sales_by_team.empty:
-        target_pct = st.slider("Set Target as % of original sales", 50, 150, 100, step=5) / 100
-        sales_by_team['TargetSales'] = sales_by_team['QuantitySold'] * target_pct
+        if not sales_by_team.empty:
 
-        np.random.seed(42)
-        variation = np.random.uniform(-0.3, 0.3, size=len(sales_by_team))
-        sales_by_team['SimulatedSales'] = (sales_by_team['QuantitySold'] * (1 + variation)).round(0)
-        sales_by_team['PerformanceRatio'] = sales_by_team['SimulatedSales'] / sales_by_team['TargetSales']
+            target_pct = st.slider("Set Target as % of original sales", 50, 150, 100, step=5) / 100
+            sales_by_team['TargetSales'] = sales_by_team['QuantitySold'] * target_pct
 
-        def performance_color(ratio):
-            if ratio >= 1.0:
-                return 'green'
-            elif 0.9 <= ratio < 1.0:
-                return 'orange'
-            else:
-                return 'red'
 
+            np.random.seed(42)
+            variation = np.random.uniform(-0.3, 0.3, size=len(sales_by_team))
+            sales_by_team['SimulatedSales'] = (sales_by_team['QuantitySold'] * (1 + variation)).round(0)
+            sales_by_team['PerformanceRatio'] = sales_by_team['SimulatedSales'] / sales_by_team['TargetSales']
+
+
+            def performance_color(ratio):
+            
+                if ratio >= 1.0:
+                    return 'green'
+                elif 0.9 <= ratio < 1.0:
+                    return 'orange'
+                else:
+                    return 'red'
+            
         sales_by_team['Color'] = sales_by_team['PerformanceRatio'].apply(performance_color)
 
         # Bar chart
